@@ -7,7 +7,7 @@ declare var $:any;
   templateUrl: './banner-insti.component.html',
   styleUrls: ['./banner-insti.component.css']
 })
-export class bannerInstiComponent implements OnInit {
+export class BannerInstiComponent implements OnInit {
   banerInsti:{ route:string, image:string }[]
 
   constructor() {
