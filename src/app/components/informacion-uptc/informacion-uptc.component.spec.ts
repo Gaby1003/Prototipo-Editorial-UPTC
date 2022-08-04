@@ -17,7 +17,9 @@ describe('InformacionUptcComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('Debe existir el componente informacion-uptc', ()=>{
+    const fixture=TestBed.createComponent(InformacionUptcComponent);
+    const app=fixture.componentInstance
+    expect(app).toBeTruthy();
+  })
 });

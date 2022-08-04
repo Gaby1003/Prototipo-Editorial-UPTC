@@ -17,7 +17,9 @@ describe('SocialMediaComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('Debe existir el componente social-media', ()=>{
+    const fixture=TestBed.createComponent(SocialMediaComponent);
+    const app=fixture.componentInstance
+    expect(app).toBeTruthy();
+  })
 });

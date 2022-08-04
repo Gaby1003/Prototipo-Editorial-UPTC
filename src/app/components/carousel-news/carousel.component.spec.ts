@@ -17,7 +17,9 @@ describe('CarouselComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('Debe existir el componente carousel-news', ()=>{
+    const fixture=TestBed.createComponent(CarouselComponent);
+    const app=fixture.componentInstance
+    expect(app).toBeTruthy();
+  })
 });

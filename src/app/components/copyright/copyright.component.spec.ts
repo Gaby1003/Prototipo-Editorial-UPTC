@@ -17,7 +17,9 @@ describe('CopyrightComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('Debe existir el componente copyright', ()=>{
+    const fixture=TestBed.createComponent(CopyrightComponent);
+    const app=fixture.componentInstance
+    expect(app).toBeTruthy();
+  })
 });
