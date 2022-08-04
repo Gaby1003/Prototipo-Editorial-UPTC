@@ -19,9 +19,9 @@ export class BannerInstiComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    $(document).ready(function(){
+    /*$(document).ready(function(){
       $('.carousel').carousel();
-    });
+    });*/
   }
 
 }
