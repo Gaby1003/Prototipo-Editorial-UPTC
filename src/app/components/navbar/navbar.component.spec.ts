@@ -17,7 +17,9 @@ describe('NavbarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  it('Debe existir el componente navbar ', ()=>{
+    const fixture=TestBed.createComponent(NavbarComponent);
+    const app=fixture.componentInstance
+    expect(app).toBeTruthy();
+  })
 });

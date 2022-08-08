@@ -1,6 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { BannerInstiComponent } from './components/banner-insti/banner-insti.component';
+import { CarouselComponent } from './components/carousel-news/carousel.component';
+import { CopyrightComponent } from './components/copyright/copyright.component';
+import { InformacionUptcComponent } from './components/informacion-uptc/informacion-uptc.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SocialMediaComponent } from './components/social-media/social-media.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -9,12 +15,18 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        NavbarComponent,
+        CarouselComponent,
+        CopyrightComponent,
+        BannerInstiComponent,
+        InformacionUptcComponent,
+        SocialMediaComponent
       ],
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it('Debe existir el componente app.component', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
