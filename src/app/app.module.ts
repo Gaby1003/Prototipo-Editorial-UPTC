@@ -25,8 +25,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     CarouselComponent,
     CopyrightComponent,
     BannerInstiComponent,
-    InformacionUptcComponent,
-    SocialMediaComponent
+    InformacionUptcComponent
+  //  SocialMediaComponent
   ],
   imports: [
     BrowserModule,

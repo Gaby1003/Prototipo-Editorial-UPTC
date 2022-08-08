@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BannerInstiComponent } from './banner-insti.component';
 
-describe('BannerInstiComponentBannerInstiComponent', () => {
+describe('BannerInstiComponent', () => {
   let component: BannerInstiComponent;
   let fixture: ComponentFixture<BannerInstiComponent>;
 
