@@ -1,19 +1,26 @@
-<div style="background-color: #a09f9f;">
-  <ul class="list-inline-block">
-    <li class="list-inline-item mt-4 mb-4">
-        <a class="btn btn-dark btn-sm" href="#!" data-mdb-toggle="modal" style="margin-left: 90%;">
-          <i class="fab fa-facebook-f" style="color: white; padding: 3px;"></i>
-        </a>
-    </li>
-    <li class="list-inline-item mt-4 mb-4">
-      <a class="btn btn-dark btn-sm" href="#!" data-mdb-toggle="modal" style="margin-left: 90%;">
-        <i class="fab fa-instagram" style="color: white;"></i>
-      </a>
-    </li>
-    <li class="list-inline-item mt-4 mb-4 ">
-      <a class="btn btn-dark btn-sm" href="#!" data-mdb-toggle="modal" style="margin-left: 80%;">
-        <i class="fab fa-youtube" style="color: white;"></i>
-      </a>
-    </li>
-  </ul>
+<div class="row mt-0" style="background-color: #a09f9f;">
+  <div class="col-8">
+    <ul class="list-inline-block">
+      <li class="list-inline-item mt-4 mb-2">
+            <i (click)="goToFacebook()" class="fab fa-facebook-f btn-dark btn-sm"
+            style="color: white; margin-left: 90%;"></i>
+      </li>
+      <li class="list-inline-item mt-4 mb-2">
+          <i (click)="goToInstagram()" class="fab fa-instagram btn-dark btn-sm"
+          style="color: white; margin-left: 90%;"></i>
+      </li>
+      <li class="list-inline-item mt-4 mb-2 ">
+          <i (click)="goToYoutube()" class="fab fa-youtube btn-dark btn-sm"
+          style="color: white; margin-left: 90%;"></i>
+      </li>
+    </ul>
+  </div>
+  <div class="input-group col-2" style="width:25%">
+    <form class="form-inline row">
+      <i class="fas fa-search col"></i>
+      <input class="form-control" type="search" placeholder="BÚSQUEDA" aria-label="Search"
+        style="height: 30%; background-color: #a09f9f; border: transparent;
+          border-bottom: 1px solid white;">
+    </form>
+  </div>
 </div>

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "prototipo-editorial-4bd6c"
+  },
+  "targets": {
+    "prototipo-editorial-4bd6c": {
+      "hosting": {
+        "Prototipo-Editorial": [
+          "prototipo-editorial-4bd6c"
+        ]
+      }
+    }
+  }
+}
