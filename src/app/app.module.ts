@@ -15,7 +15,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideFirestore,getFirestore, Firestore } from '@angular/fire/firestore';
 
 
 @NgModule({
@@ -25,8 +25,8 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     CarouselComponent,
     CopyrightComponent,
     BannerInstiComponent,
-    InformacionUptcComponent
-  //  SocialMediaComponent
+    InformacionUptcComponent,
+    SocialMediaComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +37,9 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
   ],
-  providers: [],
+  providers: [
+    Firestore
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
