@@ -38,7 +38,7 @@ import { provideFirestore,getFirestore, Firestore } from '@angular/fire/firestor
     provideFirestore(() => getFirestore()),
   ],
   providers: [
-    Firestore
+    
   ],
   bootstrap: [AppComponent]
 })
